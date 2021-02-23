@@ -1,0 +1,98 @@
+:root {
+  --red: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pomodoro-app {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#timer-container {
+  border: 1px solid black;
+  width: 40vw;
+  height: 40vh;
+  margin: auto;
+  border-radius: 25px;
+  background-color: #262929;
+}
+
+#timer {
+  width: 200px;
+  height: 200px;
+  border: 5px solid var(--red);
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+#time {
+  position: relative;
+  font-size: 2.3rem;
+  bottom: 120px;
+  left: 2px;
+  color: var(--red);
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  border-radius: 40%;
+  color: white;
+  outline: 0;
+  border-style: none;
+}
+
+#work {
+  background-color: #0398fc;
+}
+#short-break {
+  background-color: #4ad138;
+}
+#long-break {
+  background-color: #228f14;
+}
+#stop {
+  background-color: #ed1515;
+}
+
+@media (max-width: 425px) {
+  #timer-container {
+    width: 80vw;
+    height: 50vh;
+  }
+
+  .btn {
+    width: 75px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  #timer-container {
+    width: 70vw;
+    height: 50vh;
+  }
+
+  .btn {
+    width: 75px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #timer-container {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .btn {
+    width: 80px;
+    height: 50px;
+  }
+}
